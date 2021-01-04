@@ -133,7 +133,7 @@ function draw() {
 }
 
 function mousePressed(){
-  if(gameState!="end"){
+  if(gameState!="end"&&particles.body.position.y>780){
     turn=turn+1;
     particles=new Particle(mouseX, 20, 10);
     //console.log(turn)
