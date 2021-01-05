@@ -1,4 +1,4 @@
-var Engine = Matter.Engine,
+const Engine = Matter.Engine,
   World = Matter.World,
   Events = Matter.Events,
   Bodies = Matter.Bodies;
@@ -133,7 +133,7 @@ function draw() {
 }
 
 function mousePressed(){
-  if(gameState!="end"&&particles.body.position.y>780){
+  if(gameState!="end"){
     turn=turn+1;
     particles=new Particle(mouseX, 20, 10);
     //console.log(turn)
